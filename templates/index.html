@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        Welcome
+    </header>
+
+    <section class="container2">
+        <h2>Sign up</h2>
+        <form id="registrationForm" onsubmit="register(event)">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required class="textInput">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required class="textInput">
+            </div>
+            <div class="form-group">
+                <label for="full_name">Full name:</label>
+                <input type="text" id="full_name" class="textInput">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required class="textInput">
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+        <p>Already have an account?</p>
+        <button id="loginButton" onclick="navigateTo('/login')">Login</button>
+    </section>>
+    <script defer src="static/script.js"></script>
+</body>
+</html>
